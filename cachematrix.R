@@ -30,7 +30,7 @@ list(set = set,
 
 cacheSolve <- function(x, ...) {
         
-    inv <- x$getInverse()
+    inv <- x$getinverse()
     
     if (!is.null(inv)) {
         message("getting cached data")
@@ -40,7 +40,7 @@ cacheSolve <- function(x, ...) {
     
     inv <- solve(M, ...)
     
-    x$setInverse(inv)
+    x$setinverse(inv)
     
     return(inv)
 }
